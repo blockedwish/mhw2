@@ -1,0 +1,91 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+
+
+.choice-grid{
+    width: 100%;
+}
+section.choice-grid div.row{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section.choice-grid div.row .profile{
+    width:32.5%;
+    box-sizing: border-box; /*Diciamo a CSS che deve calcolare width comprendendo pure i bordi.*/
+    display: inline-block;
+    padding:10px;
+}
+.question-name{
+    background-size: auto 100%;
+}
+.question-name[data-category-question="avatar"]{
+    background-image: url("https://w0.peakpx.com/wallpaper/202/509/HD-wallpaper-south-park-eric-cartman-kenny-mccormick-kyle-broflovski-stan-marsh.jpg");
+}
+.question-name[data-category-question="hobby"]{
+    background-image: url("https://static01.nyt.com/images/2019/10/16/autossell/hobby_promo/hobby_promo-jumbo-v2.gif");
+}
+.question-name[data-category-question="animalepreferito"]{
+    background-image: url("https://dbdzm869oupei.cloudfront.net/img/vinylrugs/preview/36187.png");
+}
+
+
+div img{
+    width:100%;
+}
+
+div.profile{
+    background-color: #f4f4f4;
+    border: 1px solid  #dcdcdc;
+}
+.checkbox{
+    margin-top:auto;
+}
+
+
+section.risultato{
+    display:none;
+    margin-top:40px;
+    margin-bottom:20px;
+    padding:20px;
+}
+section.risultato p{
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+section.risultato button{
+    display: block;
+    width:100%;
+    text-align: center;
+    height:50px;
+    background-color: #cecece;
+    font-size:20px
+}
+section.risultato button:hover{
+    background-color: #e0e0e0;
+}
+
+
+.opacity{
+    opacity: 0.6;
+}
+div.profile_selected{
+    background-color: #cfe3ff;
+}
+@media only screen and (max-width: 700px) {
+    article{
+        width: 95%;
+    }
+    #circles_name_project_container{
+        display:none;
+    }
+  }
+
+
+  @media only screen and (max-width: 500px) {
+    section.choice-grid div.row .profile{
+        width: 49%;
+    }
+  }
